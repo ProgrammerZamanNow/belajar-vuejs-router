@@ -1,5 +1,6 @@
 <script setup>
-
+const {requestId} = defineProps(["requestId"])
+console.info(`Request Id : ${requestId}`)
 </script>
 
 <template>
