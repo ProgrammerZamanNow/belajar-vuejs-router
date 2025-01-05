@@ -1,11 +1,11 @@
 <script setup>
 import {ref, watchEffect} from "vue";
-import {useRoute, useRouter} from "vue-router";
+import {useRouter} from "vue-router";
 
 const products = ref([]);
-const route = useRoute();
+const {product} = defineProps(["product"])
 
-const search = ref(route.query.product || '');
+const search = ref(product || '');
 const router = useRouter();
 
 watchEffect(() => {

@@ -18,7 +18,10 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: Home
+      component: Home,
+      props: {
+        title: "Home Page"
+      }
     },
     {
       path: "/home",
@@ -32,7 +35,10 @@ const router = createRouter({
     {
       path: "/products/search",
       component: ProductSearch,
-      name: "product-search"
+      name: "product-search",
+      props: route => ({
+        product: route.query.product
+      })
     },
     {
       path: "/products/search/:keyword",
@@ -47,7 +53,13 @@ const router = createRouter({
     },
     {
       path: "/products/:id(\\d+)?",
-      component: ProductDetail
+      component: ProductDetail,
+      props: true
+      // props: route => (
+      //   {
+      //     id: route.params.id
+      //   }
+      // )
     },
     {
       path: "/users",
