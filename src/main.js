@@ -24,7 +24,8 @@ const router = createRouter({
     },
     {
       path: "/products/search",
-      component: ProductSearch
+      component: ProductSearch,
+      name: "product-search"
     },
     {
       path: "/products/:id(\\d+)?",
@@ -36,19 +37,23 @@ const router = createRouter({
       children: [
         {
           path: '',
-          component: UserProfile
+          component: UserProfile,
+          name: 'user'
         },
         {
           path: 'profile',
-          component: UserProfile
+          component: UserProfile,
+          name: 'user-profile'
         },
         {
           path: 'order',
-          component: UserOrder
+          component: UserOrder,
+          name: 'user-order'
         },
         {
           path: 'wishlist',
-          component: UserWishlist
+          component: UserWishlist,
+          name: 'user-wishlist'
         }
       ]
     },

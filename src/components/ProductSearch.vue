@@ -10,6 +10,7 @@ const router = useRouter();
 
 watchEffect(() => {
   router.replace({
+    name: 'product-search',
     query: {
       product: search.value
     }
