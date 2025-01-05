@@ -21,6 +21,10 @@ const router = createRouter({
       component: Home
     },
     {
+      path: "/home",
+      redirect: "/"
+    },
+    {
       path: "/about",
       component: About,
       sensitive: true
@@ -29,6 +33,17 @@ const router = createRouter({
       path: "/products/search",
       component: ProductSearch,
       name: "product-search"
+    },
+    {
+      path: "/products/search/:keyword",
+      redirect: route => {
+        return {
+          name: "product-search",
+          query: {
+            product: route.params.keyword
+          }
+        }
+      }
     },
     {
       path: "/products/:id(\\d+)?",
