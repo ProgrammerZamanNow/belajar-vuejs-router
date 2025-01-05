@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Apple iPhone 14",
+    "price": 100
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S23",
+    "price": 200
+  },
+  {
+    "id": 3,
+    "name": "Sony WH-1000XM5 Headphones",
+    "price": 300
+  },
+  {
+    "id": 4,
+    "name": "Dell XPS 13 Laptop",
+    "price": 400
+  },
+  {
+    "id": 5,
+    "name": "Apple MacBook Pro 16",
+    "price": 500
+  },
+  {
+    "id": 6,
+    "name": "Google Pixel 8",
+    "price": 600
+  },
+  {
+    "id": 7,
+    "name": "Apple Watch Series 9",
+    "price": 700
+  },
+  {
+    "id": 8,
+    "name": "Sony PlayStation 5",
+    "price": 800
+  },
+  {
+    "id": 9,
+    "name": "Microsoft Xbox Series X",
+    "price": 900
+  },
+  {
+    "id": 10,
+    "name": "Apple iPad Pro 12.9",
+    "price": 1000
+  }
+]
